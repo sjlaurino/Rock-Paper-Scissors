@@ -12,16 +12,23 @@
 </head>
 
 <body>
-  <section id="buttons">
-    <button onclick="play('rock')">Rock</button>
-    <button onclick="play('paper')">Paper</button>
-    <button onclick="play('scissors')">Scissors</button>
-  </section>
-  <section>
-    <h1 id="result"></h1>
-  </section>
+  <div class="container-fluid">
+    <div id="buttons row mt-4">
+      <div class="col-5 d-flex justify-content-center">
+        <button onclick="play('rock')">Rock</button>
+        <button onclick="play('paper')">Paper</button>
+        <button onclick="play('scissors')">Scissors</button>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-5 d-flex justify-content-center">
+        <button onclick="play('CPU')">CPU</button>
+      </div>
+      <div>
+        <h1 id="result"></h1>
+      </div>
 
-  <script src="app/app.js"></script>
+      <script src="app/app.js"></script>
+    </div>
 </body>
 
 </html>
