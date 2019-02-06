@@ -1,16 +1,16 @@
 
-let cpChoice = {
-  rock: {
-    img('')
-  },
+// let cpChoice = {
+//   rock: {
+//     img('')
+//   },
 
-  paper: {
-    img('')
-  },
-  scissors: {
-    img('')
-  }
-}
+//   paper: {
+//     img('')
+//   },
+//   scissors: {
+//     img('')
+//   }
+// }
 
 
 
@@ -28,10 +28,10 @@ function play(playerChoice) {
   }
 }
 
-function random(cpChoice) {
-  let choices = Object.keys(cpChoice)
-  let choiceIndex = Math.floor(Math.random() * choices.length)
-  let choice = cpChoice[choiceIndex]
-  play(choice)
-}
+// function random(cpChoice) {
+//   let choices = Object.keys(cpChoice)
+//   let choiceIndex = Math.floor(Math.random() * choices.length)
+//   let choice = cpChoice[choiceIndex]
+//   play(choice)
+// }
 
