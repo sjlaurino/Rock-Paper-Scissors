@@ -13,15 +13,19 @@
 
 <body>
   <div class="container-fluid">
-    <div id="buttons row mt-4">
+    <h1 class="header d-flex justify-content-center mt-2">ROCK, PAPER, SCISSORS!</h1>
+    <p class="instructions d-flex justify-content-left">Choose One of the Options below:</p>
+    <div class="buttons row mt-4">
       <div class="col-5 d-flex justify-content-center">
-        <button onclick="play('rock')">Rock</button>
-        <button onclick="play('paper')">Paper</button>
-        <button onclick="play('scissors')">Scissors</button>
+        <button class='rock' onclick="play('rock')">Rock</button>
+        <button class='paper' onclick="play('paper')">Paper</button>
+        <button class='scissors' onclick="play('scissors')">Scissors</button>
+        <div id="playerChoice"></div>
       </div>
       <div class="col-2"></div>
       <div class="col-5 d-flex justify-content-center">
-        <button onclick="play('CPU')">CPU</button>
+        <button class='cpu' onclick="random()">CPU</button>
+        <div id="cpuChoice"></div>
       </div>
       <div>
         <h1 id="result"></h1>
