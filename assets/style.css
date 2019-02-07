@@ -26,3 +26,17 @@
   background-color: rgb(20, 20, 20);
   color: whitesmoke;
 }
+
+.cpuPic{
+   height: 300px;
+  width: 300px;
+}
+.playerPic{
+   height: 300px;
+  width: 300px;
+}
+
+.pics{
+  max-height: 300px;
+  max-width: 400px;
+}

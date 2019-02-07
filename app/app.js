@@ -1,13 +1,13 @@
 
 let options = {
   rock: {
-    img: ('https://i.pinimg.com/originals/cd/63/d9/cd63d97dd4a883f9bba914248a0ff23e.jpg')
+    image: 'https://i.pinimg.com/originals/cd/63/d9/cd63d97dd4a883f9bba914248a0ff23e.jpg'
   },
   paper: {
-    img: ('https://kopiernet.files.wordpress.com/2016/07/paper.jpg')
+    image: 'https://kopiernet.files.wordpress.com/2016/07/paper.jpg'
   },
   scissors: {
-    img: ('https://pmcvariety.files.wordpress.com/2015/12/edward-scissorhands.jpg?w=1000&h=563&crop=1')
+    image: 'https://pmcvariety.files.wordpress.com/2015/12/edward-scissorhands.jpg?w=1000&h=563&crop=1'
   }
 }
 
@@ -22,6 +22,8 @@ function random() {
 function play(playerChoice) {
   let cpChoice = random()
   console.log(cpChoice)
+  document.getElementById('pics').innerHTML = `<img class='pics' height="300px" src="${options[playerChoice].image}"/>`
+  document.getElementById('cppics').innerHTML = `<img class='pics' height="300px" src="${options[cpChoice].image}"/>`
   if (playerChoice == 'rock') {
     if (cpChoice == 'rock') {
       document.getElementById('result').innerHTML = 'DRAW, try again!'
