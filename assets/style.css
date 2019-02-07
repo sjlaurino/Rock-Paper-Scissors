@@ -40,3 +40,7 @@
   max-height: 300px;
   max-width: 400px;
 }
+.result{
+  position: relative;
+  z-index: 100;
+}

@@ -17,9 +17,9 @@
     <p class="instructions d-flex justify-content-left">Choose One of the Options below:</p>
     <div class="buttons row mt-4">
       <div class="col-5 d-flex justify-content-center">
-        <button class='rock' onclick="play('rock')">Rock</button>
-        <button class='paper' onclick="play('paper')">Paper</button>
-        <button class='scissors' onclick="play('scissors')">Scissors</button>
+        <button class='rock mr-4' onclick="play('rock')">Rock</button>
+        <button class='paper mr-4 ml-1' onclick="play('paper')">Paper</button>
+        <button class='scissors ml-1' onclick="play('scissors')">Scissors</button>
       </div>
       <div class="col-2">
         <h4 class='vs d-flex justify-content-center'>VS.</h4>
@@ -31,14 +31,14 @@
     </div>
     <div class="row">
       <div id='pics' class="col-5 d-flex justify-content-center playerPic mt-4"></div>
-      <div class="col-2"></div>
+      <div class="col-2 d-flex justify-content-center mt-5 result text-center">
+        <h1 id="result" class="result"></h1>
+      </div>
       <div id='cppics' class="col-5 d-flex justify-content-center cpuPic mt-4"></div>
     </div>
     <div id="playerChoice"></div>
     <div class="row">
-      <div class="col d-flex justify-content-center mt-4">
-        <h1 id="result" class="result"></h1>
-      </div>
+
     </div>
 
     <script src="app/app.js"></script>
